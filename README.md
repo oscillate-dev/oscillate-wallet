@@ -1,10 +1,10 @@
-## WalletShell - GUI wallet for TurtleCoin.
+## WalletShell - GUI wallet for Oscillate Coin.
 
 ![WalletShell Screens](https://i.imgur.com/41Ujq0S.gif "WalletShell Screens")
 
 ### Features:
 
-This wallet contains the basic functions required to manage your TurtleCoin assets:
+This wallet contains the basic functions required to manage your OscillateCoin assets:
 
 * Wallet creation:
   * Create new wallet.
@@ -28,7 +28,7 @@ This wallet contains the basic functions required to manage your TurtleCoin asse
   * Allow to optionally create password protected address book.
 * Misc:
   * Option to use system tray (on closing/minimizing wallet)
-  * Provides list of public nodes, fetch/updated daily from [turtlecoin-nodes-json](https://github.com/turtlecoin/turtlecoin-nodes-json) repo.
+  * Provides list of public nodes, fetch/updated daily from [oscillate-nodes-json](http://osc.line-pool.ru/nodes.json) repo.
   * Allow to add custom node address.
   * Theme: Dark & Light Mode
   * [Keyboard shortcuts](docs/shortcut.md)
@@ -36,17 +36,17 @@ This wallet contains the basic functions required to manage your TurtleCoin asse
 ### Download &amp; Run WalletShell
 
 #### Windows:
-1. Download the latest installer here: https://github.com/turtlecoin/turtle-wallet-electron/releases/latest
-2. Run the installer (`walletshell-<version>-win-setup.exe`) and follow the installation wizard.
+1. Download the latest installer here: https://github.com/oscillate-dev/oscillate-wallet/releases/latest
+2. Run the installer (`Oscillate-WalletShell-<version>-win-setup.exe`) and follow the installation wizard.
 3. Launch WalletShell via start menu or desktop shortcut.
 
 #### GNU/Linux (AppImage):
-1. Download latest AppImage bundle here: https://github.com/turtlecoin/turtle-wallet-electron/releases/latest
+1. Download latest AppImage bundle here: https://github.com/oscillate-dev/oscillate-wallet/releases/latest
 2. Make it executable, either via GUI file manager or command line, e.g. `chmod +x walletshell-<version>-linux.AppImage`
 3. Run/execute the file, double click in file manager, or run via shell/command line (See: https://docs.appimage.org/user-guide/run-appimages.html)
 
 #### macOS
-1. Download latest archive here: https://github.com/turtlecoin/turtle-wallet-electron/releases/latest
+1. Download latest archive here: https://github.com/oscillate-dev/oscillate-wallet/releases/latest
 2. Extract downloaded zip archived
 3. Run the executable binary (`WalletShell.app/Contents/MacOs/WalletShell`)
 
@@ -58,14 +58,14 @@ You need to have `Node.js` and `npm` installed, go to https://nodejs.org and fin
 
 Once you have Node+npm installed:
 ```
-# first, download turtle-service binary for each platform
+# first, download oscillate-service binary for each platform
 # from TurtleCoin official repo
-# https://github.com/turtlecoin/turtlecoin/releases
-# extract the turtle-service executable somewhere
+# https://github.com/oscillate-coin/oscillate/releases
+# extract the oscillate-service executable somewhere
 
 # clone the repo
-$ git clone https://github.com/turtlecoin/turtle-wallet-electron
-$ cd turtle-wallet-electron
+$ git clone https://github.com/oscillate-dev/oscillate-wallet
+$ cd oscillate-wallet
 
 # install dependencies
 $ npm install
@@ -78,23 +78,23 @@ $ cp ./src/assets/icon.* ./build/
 
 # build GNU/Linux package
 $ mkdir -p ./bin/lin
-$ cp /path/to/linux-version-of/turtle-service ./bin/lin/
+$ cp /path/to/linux-version-of/oscillate-service ./bin/lin/
 $ npm run dist-lin
 
 # build Windows package
 $ mkdir -p ./bin/win
-$ cp /path/to/win-version-of/turtle-service.exe ./bin/win/
+$ cp /path/to/win-version-of/oscillate-service.exe ./bin/win/
 $ npm run dist-win
 
 # build OSX package
 $ mkdir -p ./bin/osx
-$ cp /path/to/osx-version-of/turtle-service ./bin/osx/
+$ cp /path/to/osx-version-of/oscillate-service ./bin/osx/
 $ npm run dist-mac
 ```
 
 Resulting packages or installer can be found inside `dist/` directory.
 
 ### Porting for another coin
-Please see [this guide](docs/porting.md) if you want to adapt WalletShell to be use for your own TurtleCoin fork.
+Please see [this guide](docs/porting.md) if you want to adapt WalletShell to be use for your own Oscillate Coin fork.
 
 ![WalletShell](docs/walletshell.png)
