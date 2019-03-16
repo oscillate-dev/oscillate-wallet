@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const url = require('url');
 const https = require('https');
+const http = require('http');
 const platform = require('os').platform();
 const crypto = require('crypto');
 const Store = require('electron-store');
@@ -35,7 +36,7 @@ const DEFAULT_SETTINGS = {
     node_address: DEFAULT_REMOTE_NODE,
     pubnodes_last_updated: 946697799000,
     pubnodes_data: config.remoteNodeListFallback,
-    pubnodes_custom: ['127.0.0.1:11898'],
+    pubnodes_custom: ['127.0.0.1:11246'],
     pubnodes_exclude_offline: false,
     tray_minimize: false,
     tray_close: false,
@@ -261,7 +262,7 @@ function storeNodeList(pnodes) {
 
 function doNodeListUpdate() {
     try {
-        https.get(config.remoteNodeListUpdateUrl, (res) => {
+        http.get(config.remoteNodeListUpdateUrl, (res) => {
             var result = '';
             res.setEncoding('utf8');
 
