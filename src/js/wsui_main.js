@@ -220,10 +220,10 @@ function populateElementVars() {
 let jtfr = {
     tFind: [
         "WalletShell",
-        "https://github.com/turtlecoin/turtle-wallet-electron",
-        "TurtleCoin",
-        "TRTL",
-        "turtle-service",
+        "https://github.com/oscillate-dev/oscillate-wallet",
+        "OscillateCoin",
+        "OSC",
+        "oscillate-service",
         "CFG_MIN_FEE",
         "CFG_MIN_SEND"
     ],
