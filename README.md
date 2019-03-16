@@ -59,7 +59,7 @@ You need to have `Node.js` and `npm` installed, go to https://nodejs.org and fin
 Once you have Node+npm installed:
 ```
 # first, download oscillate-service binary for each platform
-# from TurtleCoin official repo
+# from OscillateCoin official repo
 # https://github.com/oscillate-coin/oscillate/releases
 # extract the oscillate-service executable somewhere
 
